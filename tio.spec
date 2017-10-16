@@ -1,7 +1,7 @@
 Summary:        Simple TTY terminal I/O application
 Name:           tio
-Version:        1.24
-Release:        2%{?dist}
+Version:        1.25
+Release:        1%{?dist}
 License:        GPLv2+
 URL:            https://tio.github.io/
 Source0:        https://github.com/tio/tio/releases/download/v%{version}/%{name}-%{version}.tar.xz
@@ -35,6 +35,9 @@ gpgv2 --keyring %{SOURCE2} %{SOURCE1} %{SOURCE0}
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Mon Oct 16 2017 Robert Scheck <robert@fedoraproject.org> 1.25-1
+- Upgrade to 1.25
+
 * Sun Oct 01 2017 Robert Scheck <robert@fedoraproject.org> 1.24-2
 - Changes to match with Fedora Packaging Guidelines (#1497549)
 
