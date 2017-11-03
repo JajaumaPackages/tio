@@ -5,17 +5,13 @@ Release:        1%{?dist}
 License:        GPLv2+
 URL:            https://tio.github.io/
 Source0:        https://github.com/tio/tio/releases/download/v%{version}/%{name}-%{version}.tar.xz
-Source1:        https://github.com/tio/tio/releases/download/v%{version}/%{name}-%{version}.tar.xz.asc
-Source2:        gpgkey-101BAC1C15B216DBE07A3EEA2BDB4A0944FA00B1.gpg
 BuildRequires:  gcc
-BuildRequires:  gnupg2
 
 %description
 Tio is a simple TTY terminal application which features a straightforward
 commandline interface to easily connect to TTY devices for basic input/output.
 
 %prep
-gpgv2 --keyring %{SOURCE2} %{SOURCE1} %{SOURCE0}
 %setup -q
 
 %build
