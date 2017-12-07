@@ -1,6 +1,6 @@
 Summary:        Simple TTY terminal I/O application
 Name:           tio
-Version:        1.25
+Version:        1.27
 Release:        1%{?dist}
 License:        GPLv2+
 URL:            https://tio.github.io/
@@ -31,6 +31,9 @@ commandline interface to easily connect to TTY devices for basic input/output.
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Wed Nov 29 2017 Robert Scheck <robert@fedoraproject.org> 1.27-1
+- Upgrade to 1.27
+
 * Mon Oct 16 2017 Robert Scheck <robert@fedoraproject.org> 1.25-1
 - Upgrade to 1.25
 
